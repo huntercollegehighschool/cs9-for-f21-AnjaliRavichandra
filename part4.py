@@ -40,3 +40,18 @@ fizz
 """
 
 # write your code here 
+n = int(input("Enter a number: "))
+
+total = 0
+
+for i in range(1, n + 1):
+  total = total + 1
+  if (total % 3 == 0) and (total % 5 == 0):
+    print("Fizzbuzz")
+  elif total % 3 == 0:
+    print("fizz")
+  elif total % 5 == 0:
+    print("buzz")
+  else:
+    print(total)
+
